@@ -14,21 +14,47 @@ const Header = () => {
                 
                 {/* Desktop Navigation */}
                 <div className='hidden md:block'>
-                    <ul className='flex list-none space-x-6 lg:space-x-8 text-base lg:text-lg'>
-                        <li>
-                          <Link href="/" className='hover:text-gray-300 transition duration-200'>New</Link>
-                        </li>
-                        <li>
-                          <Link href="/about" className='hover:text-gray-300 transition duration-200'>Men</Link>
-                        </li>
-                        <li>
-                          <Link href="/blogs" className='hover:text-gray-300 transition duration-200'>Women</Link>
-                        </li>
-                        <li>
-                          <Link href="/contact" className='hover:text-gray-300 transition duration-200'>Kids</Link>
-                        </li>
+                    <ul className='hoveffect flex justify-center items-center list-none space-x-6 lg:space-x-8 text-base lg:text-lg'>
+                      <li className="font-fam">VibeKiks</li>
+                      <li className="listelement">
+                        <Link href="/">Home</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Men&apos;s</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Women&apos;s</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Kid&apos;s</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">New Arrivals</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Sale</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Brands</Link>
+                      </li>
+                      <li className="listelement">
+                        <Link href="/">Cart</Link>
+                      </li>
+                      <li className="search-container">
+                        <form action="/search" method="GET">
+                          <input 
+                            type="text" 
+                            placeholder="Search shoes... 🔍" 
+                            name="q"
+                            className="search-input inpborder rounded-md w-66 h-10 text-center"
+                          />
+                          <button type="submit" className="search-btn rounded-md w-26 h-8 ml-1 bg-button">
+                            Search
+                          </button>
+                        </form>
+                      </li>
                     </ul>
-                </div>
+                 </div>
 
                 {/* Mobile Menu Button */}
                 <div className='md:hidden'>
@@ -47,10 +73,15 @@ const Header = () => {
             {isMenuOpen && (
                 <div className='md:hidden'>
                     <div className='px-2 pt-2 pb-4 space-y-1 bg-black border-t border-gray-700'>
-                        <Link href="/" className='block px-3 py-2 text-base hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Home</Link>
-                        <Link href="/about" className='block px-3 py-2 text-base hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>About</Link>
-                        <Link href="/blog" className='block px-3 py-2 text-base hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Blogs</Link>
-                        <Link href="/contact" className='block px-3 py-2 text-base hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                        <h2 className="font-fam text-center">VibeKiks</h2>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Home</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Men&apos;s</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Women&apos;s</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Kid&apos;s</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>New Arrivals</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Sale</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Brands</Link>
+                        <Link href="/" className='block px-3 py-2 text-base  hover:text-gray-300 transition duration-200' onClick={() => setIsMenuOpen(false)}>Cart</Link>
                     </div>
                 </div>
             )}

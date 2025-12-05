@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hoveffect{
+  perspective: 1000px;
+}
+
+.listelement{
+  transition: all 0.5s ease;
+}
+
+.listelement:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.font-fam{
+  font-family: Moena;
+  font-size: 40px;
+}
+
+.bg-button{
+  background-color: white;
+  color: black;
+  border: none;
+  transition: all 0.8s ease;
+}
+
+.bg-button:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.inpborder{
+  border: 1px solid white;
+}
