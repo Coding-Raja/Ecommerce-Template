@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className='bg-black text-white py-4 shadow-lg'>
+        <nav className='navindex bg-black/30 text-white py-4 shadow-lg backdrop-blur-md'>
             <div className='container mx-auto px-4 flex justify-between items-center'>
                 
                 {/* Desktop Navigation */}
@@ -48,7 +48,7 @@ const Header = () => {
                             name="q"
                             className="search-input inpborder rounded-md w-66 h-10 text-center"
                           />
-                          <button type="submit" className="search-btn rounded-md w-26 h-8 ml-1 bg-button">
+                          <button type="submit" className="search-btn rounded-md w-26 h-10 ml-1 bg-button">
                             Search
                           </button>
                         </form>
