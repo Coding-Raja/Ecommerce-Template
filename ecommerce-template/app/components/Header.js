@@ -9,8 +9,8 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className='navindex bg-black/30 text-white py-4 shadow-lg backdrop-blur-md'>
-            <div className='container mx-auto px-4 flex justify-between items-center'>
+        <nav className='navindex fixed bg-black/30 text-white py-4 shadow-lg backdrop-blur-md'>
+            <div className='container mx-auto px-2 flex justify-between items-center'>
                 
                 {/* Desktop Navigation */}
                 <div className='hidden md:block'>
