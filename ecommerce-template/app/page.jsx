@@ -3,17 +3,20 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
+       {/* Background Section on landing page */}
        <main className="h-[500px] max-w-full w-full md:w-3/4 sm:w-1/2">
         <div className="bgimage flex justify-center items-center">
           <div className="flex flex-col justify-center items-center mt-15 p-5 bg-black/20 backdrop-blur-xs w-1/3 rounded-lg">
             <h1 className="font-fam1 text-white/80 m-5">VibeKiks</h1>
             <p className="font-fam2 text-white/80 mb-5">Step Into Your Vibe</p>
-            <button className="w-1/2 bg-black text-lg text-white p-2 mb-5 rounded-lg cursor-pointer hover:bg-white/70 hover:text-black hover:shadow-black hover:shadow-xl transition duration-500">Explore More</button>
+            <button className="w-1/2 bg-black text-md text-white p-2 mb-5 rounded-lg cursor-pointer hover:bg-white/70 hover:text-black hover:shadow-black hover:shadow-xl transition duration-500">Explore More</button>
           </div>
         </div>
        </main>
-       <section className="mt-25 flex flex-col justify-center items-center">
-        <div className="parent grid grid-cols-5 grid-rows-5 gap-2 w-3/4">
+
+       {/* About Section on landing page */}
+       <section className="flex flex-col justify-center items-center bg-gray-100">
+        <div className="parent grid grid-cols-5 grid-rows-5 gap-4 w-3/4 mt-25">
           <div className="div1 row-span-2">
             <Image 
             src="/Sneaker13.jpg"
@@ -42,12 +45,42 @@ export default function Home() {
             />
           </div>
           <div className="div4 col-span-3 row-span-4 col-start-3 row-start-1">
-            <h2 className=''>About Us</h2>
-            <h1 className=''>We Provide High Quality Shoes</h1>
-            <button className="w-1/2 bg-black text-lg text-white p-2 mb-5 rounded-lg cursor-pointer hover:bg-white/70 hover:text-black hover:shadow-black hover:shadow-xl transition duration-500">Explore More</button>
+            <h2 className="text-lg stfont mb-4 mt-4 ml-5">About Us</h2>
+            <h1 className="text-4xl font-bold stfont mb-8 ml-5">We Provide High Quality Shoes</h1>
+            <p className="stfont text-base mb-8 ml-5">Your style journey starts from the ground up. At VibeKiks, we deliver more than just sneakers – 
+              we provide confidence, comfort, and connection. Explore our collection of premium footwear where 
+              every stitch tells a story, every design makes a statement, and every pair helps you walk through 
+              life with intention and flair.</p>
+            <button className="w-1/3 bg-black ml-5 text-md text-white p-2  rounded-lg cursor-pointer hover:bg-white/70 hover:text-black hover:shadow-black hover:shadow-xl transition duration-500">Explore More</button>
           </div>
         </div>
        </section>
+
+       {/* Categories Section on landing page */}
+       <section className="flex justify-center items-center w-full mt-25">
+        <div className="w-3/4">
+          <div className="w-full flex justify-center items-center">
+            <div className="w-1/2 justify-start flex">
+              <h1 className="font-bold text-4xl mb-12">Categories</h1>
+            </div>
+            <div className="w-1/2 justify-end flex">
+              <h1 className="text-md mb-12">All Products →</h1>
+            </div>
+          </div>
+          <div className="flex gap-8">
+            <div className="bgimg1 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Man</p>
+            </div>
+            <div className="bgimg2 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Woman</p>
+            </div>
+            <div className="bgimg3 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Kids</p>
+            </div>
+          </div>
+        </div>
+       </section>
+
     </>
   );
 }
