@@ -109,30 +109,3 @@ body {
 stfont{
   font-family: 'Times New Roman';
 }
-
-.bgimg1{
-  width: 33%;
-  height: 230px;
-  background-image: url('/MenS.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.bgimg2{
-  width: 33%;
-  height: 230px;
-  background-image: url('/WomenS.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.bgimg3{
-  width: 33%;
-  height: 230px;
-  background-image: url('/KidS.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}

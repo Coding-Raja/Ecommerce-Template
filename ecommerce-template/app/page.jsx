@@ -67,15 +67,37 @@ export default function Home() {
               <h1 className="text-md mb-12">All Products →</h1>
             </div>
           </div>
-          <div className="flex gap-8">
-            <div className="bgimg1 rounded-md flex flex-col justify-end">
+          <div className="flex gap-8 mb-20">
+            <div className="bg-[url('/MenS.jpg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
               <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Man</p>
             </div>
-            <div className="bgimg2 rounded-md flex flex-col justify-end">
+            <div className="bg-[url('/WomenS.jpeg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
               <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Woman</p>
             </div>
-            <div className="bgimg3 rounded-md flex flex-col justify-end">
+            <div className="bg-[url('/KidS.jpg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
               <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Kids</p>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       {/* Trending Section on landing page */}
+       <section className="bg-gray-100 flex justify-center items-center w-full mt-25">
+        <div className="w-3/4">
+          <div className="w-full flex justify-center items-center mt-25">
+            <div className="w-1/2 justify-start flex">
+              <h1 className="font-bold text-4xl mb-12">Trending Now</h1>
+            </div>
+            <div className="w-1/2 justify-end flex">
+              <h1 className="text-md mb-12">All Products →</h1>
+            </div>
+          </div>
+          <div className="flex gap-8 mb-20">
+            <div className="bg-[url('/Vomero.jpeg')] w-1/2 h-60 bg-cover bg-no-repeat bg-center rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Nike Vomero 5</p>
+            </div>
+            <div className="bg-[url('/Samba.webp')] w-1/2 h-60 bg-cover bg-no-repeat bg-center rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Adidas Samba</p>
             </div>
           </div>
         </div>
