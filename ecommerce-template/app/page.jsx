@@ -67,7 +67,7 @@ export default function Home() {
               <h1 className="text-md mb-12">All Products →</h1>
             </div>
           </div>
-          <div className="flex gap-8 mb-20">
+          <div className="flex gap-8">
             <div className="bg-[url('/MenS.jpg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
               <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Man</p>
             </div>
@@ -98,6 +98,31 @@ export default function Home() {
             </div>
             <div className="bg-[url('/Samba.webp')] w-1/2 h-60 bg-cover bg-no-repeat bg-center rounded-md flex flex-col justify-end">
               <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Adidas Samba</p>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       {/* New Arrival Section on landing page */}
+       <section className="flex justify-center items-center w-full mt-25">
+        <div className="w-3/4">
+          <div className="w-full flex justify-center items-center">
+            <div className="w-1/2 justify-start flex">
+              <h1 className="font-bold text-4xl mb-12">New Arrivals</h1>
+            </div>
+            <div className="w-1/2 justify-end flex">
+              <h1 className="text-md mb-12">All Products →</h1>
+            </div>
+          </div>
+          <div className="flex gap-8 mb-20">
+            <div className="bg-[url('/Vomero.jpeg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Nike Vomero 5</p>
+            </div>
+            <div className="bg-[url('/V1.jpeg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Nike Vomero 5</p>
+            </div>
+            <div className="bg-[url('/V2.jpeg')] bg-center bg-cover bg-no-repeat w-1/3 h-60 rounded-md flex flex-col justify-end">
+              <p className="bg-black/50 text-white py-4 text-center text-lg items-end rounded-b-md">Nike Vomero 5</p>
             </div>
           </div>
         </div>
